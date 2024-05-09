@@ -12,6 +12,14 @@ export default {
       },
       colors: {
         primary: "#00D991"
+      },
+      common_Li: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '3px',
+        cursor: 'hover'
       }
     },
   },
