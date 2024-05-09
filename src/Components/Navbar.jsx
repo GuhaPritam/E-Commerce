@@ -20,7 +20,9 @@ const Navbar = () => {
             <div className='flex items-center gap-10'>
                 <button className='w-28 h-10 border border-black rounded-full outline-none text-[#515151] bg-white text-lg font-medium cursor-pointer active:bg-[#f3f3f3]'>Login</button>
                 <img src={Cart_icon} alt="" />
-                <div>0</div>
+                <div className='w-5 h-5 flex justify-center items-center mt-[-2rem] ml-[-3rem] rounded-lg text-sm bg-[red] text-white'>
+                    0
+                </div>
             </div>
         </div>
     )
