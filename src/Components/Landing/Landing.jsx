@@ -22,11 +22,11 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className='flex-1 flex items-center justify-center'>
-                    <img src={Hero_image} alt="" />
+                    <img className='h-[40rem]' src={Hero_image} alt="" />
                 </div>
             </div>
         </>
     )
 }
 
-export default Landing
+export default Landing;
