@@ -29,7 +29,7 @@ const Navbar = () => {
             </ul>
             <div className='flex items-center gap-10'>
                 <button className='w-28 h-10 border border-black rounded-full outline-none text-[#515151] bg-white text-lg font-medium cursor-pointer active:bg-[#f3f3f3]'>
-                <Link to='/login'>Login</Link>
+                    <Link to='/login'>Login</Link>
                 </button>
                 <Link to='/cart'><img src={Cart_icon} alt="" /></Link>
                 <div className='w-5 h-5 flex justify-center items-center mt-[-2rem] ml-[-3rem] rounded-lg text-sm bg-[red] text-white'>
