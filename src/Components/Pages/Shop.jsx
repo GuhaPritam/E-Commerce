@@ -1,4 +1,5 @@
 import Landing from "../Landing/Landing";
+import Offers from "../Offers/Offers";
 import Populer from "../Populer/Populer";
 
 const Shop = () => {
@@ -7,6 +8,7 @@ const Shop = () => {
             <div>
                 <Landing />
                 <Populer /> 
+                <Offers />
             </div>
         </>
     )
