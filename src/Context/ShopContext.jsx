@@ -1,5 +1,6 @@
 import { createContext } from 'react';
 import All_product from '../Components/Assets/all_product';
+import PropTypes from 'prop-types';
 
 export const ShopContext = createContext(null);
 
@@ -16,3 +17,7 @@ const ShopContextProvider = (props) => {
 }
 
 export default ShopContextProvider;
+
+ShopContextProvider.propTypes = {
+    children: PropTypes.string.isRequired,
+};
