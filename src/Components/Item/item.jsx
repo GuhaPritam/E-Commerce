@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
+
 const item = (props) => {
     return (
         <>
             <div className='w-fit hover:transform duration-600'>
-                <img src={props.image} alt="" />
+                <Link to={`/product/${props.id}`}><img src={props.image} alt="" /></Link>
                 <p className='mt-1 mb-1'>{props.name}</p>
                 <div className='flex space-x-5'>
                     <div className='text-[#374151] text-base font-semibold'>
