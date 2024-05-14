@@ -29,7 +29,7 @@ function ShopCategory(props) {
                         }
                     })}
                 </div>
-                <div className='flex justify-center items-center my-36 mx-auto w-60 h-16 rounded-full bg-[#ededed] text-[#787878] text-lg font-medium'>
+                <div className='flex justify-center items-center my-[5rem] mx-auto w-60 h-16 rounded-full bg-[#ededed] text-[#787878] text-lg font-medium'>
                     Explore More
                 </div>
             </div>
