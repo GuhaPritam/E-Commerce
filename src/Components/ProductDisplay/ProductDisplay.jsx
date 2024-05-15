@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import Star_dull_icon from '../Assets/star_dull_icon.png';
 import Star_icon from '../Assets/star_icon.png';
+import { ShopContext } from '../../Context/ShopContext';
 
 function ProductDisplay({ product }) {
+    const { addToCart } = useContext(ShopContext);
+
     return (
         <>
             <div className='flex my-0 mx-44'>
@@ -48,7 +52,7 @@ function ProductDisplay({ product }) {
                             <div className='py-4 px-6 bg-[#fbfbfb] border border-solid border-[#ebebeb] rounded cursor-pointer'>XXL</div>
                         </div>
                     </div>
-                    <button className='py-5 px-10 w-52 text-base font-semibold text-white bg-[#FF4141] mb-5 border-none outline-none cursor-pointer'>ADD TO CART</button>
+                    <button onClick={() => { addToCart(product.id) }} className='py-5 px-10 w-52 text-base font-semibold text-white bg-[#FF4141] mb-5 border-none outline-none cursor-pointer'>ADD TO CART</button>
                     <p className='mt-2'><span className='font-semibold'>Category :</span>Women, T-Shirt, Crop Top</p>
                     <p className='mt-2'><span className='font-semibold'>Tag :</span>Modern, Latest</p>
                 </div>
@@ -63,6 +67,7 @@ ProductDisplay.propTypes = {
         name: PropTypes.any.isRequired,
         old_price: PropTypes.any.isRequired,
         new_price: PropTypes.any.isRequired,
+        id: PropTypes.any.isRequired,
     }).isRequired,
 };
 
