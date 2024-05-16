@@ -2,7 +2,7 @@
 E-Commerce
 
 ### Project Address:
-[[https://note-site.netlify.app](https://e-commerce-six-drab-42.vercel.app/)]
+[https://note-site.netlify.app](https://e-commerce-six-drab-42.vercel.app/)
 
 ## Project Description:
 Please view in desktop mode as it's not responsive. I've used some basic stuff and Context API here.
